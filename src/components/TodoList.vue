@@ -40,7 +40,7 @@ export default {
 
 ul {
   overflow-x: scroll;
-  margin-left: 20px;
+  padding-left: 20px;
 }
 
 ul,

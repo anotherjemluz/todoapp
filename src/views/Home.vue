@@ -4,6 +4,7 @@
     Avatar
     Gradient
     TodoList
+    TodoDetail
 
 </template>
 
@@ -12,6 +13,7 @@ import AppBar from '../components/AppBar'
 import Avatar from '../components/Avatar'
 import Gradient from '../components/Gradient'
 import TodoList from '../components/TodoList'
+import TodoDetail from '../components/TodoDetail'
 
 export default {
   name: 'Home',
@@ -19,17 +21,16 @@ export default {
     AppBar,
     Avatar,
     Gradient,
-    TodoList
+    TodoList,
+    TodoDetail
   },
 }
 </script>
 
 <style lang="scss">
 .home {
-  // background-color: #333;
   height: 100%;
   width: 100%;
-  // overflow: hidden;
   overflow: scroll;
   color: white;
 }

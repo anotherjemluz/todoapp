@@ -107,8 +107,7 @@ export default {
 <style lang="scss">
 .todo {
   flex: 1;
-  width: 70vw;
-  margin: 0 8px;
+  margin: 0px 8px 10px 8px;
   overflow: hidden;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   color: #666;
@@ -129,9 +128,8 @@ export default {
   will-change: transform;
 }
 .todo_body {
-  // display: flex;
-  width: 80vw;
   padding: 20px;
+  width: 70vw;
   // transform: translate3d(0, 189px, 0);
   will-change: transform;
 }
