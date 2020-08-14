@@ -4,7 +4,7 @@
     img(src="../assets/profile.jpg")
 
   h2.avatar_name Olá, Jems.
-  p.avatar_tips Meça duas vezes. Corte uma vez só. #[br] Você tem {{ todayTasks.length }} tarefas para hoje.
+  p.avatar_tips Meça duas vezes. Corte uma vez só. #[br]  Você tem #[strong {{ todayTasks.length }}] tarefas para hoje.
   p.avatar_date HOJE : {{ today | dateString }}
 </template>
 
@@ -68,17 +68,17 @@ export default {
   font-weight: 300;
 }
 .avatar_tips {
-  margin-top: 16px;
+  margin-top: 8px;
   padding: 0 6px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 100;
-  opacity: 0.8;
+  opacity: 0.9;
   line-height: 1.6em;
 }
 .avatar_date {
-  margin-top: 44px;
+  margin-top: 22px;
   margin-bottom: 16px;
   padding: 0 6px;
-  font-size: 14px;
+  font-size: 18px;
 }
 </style>
