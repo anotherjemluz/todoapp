@@ -1,5 +1,5 @@
 <template lang="pug">
-.todo_list(:class="{ 'todo-list__selected': selected }")
+.todo-list(:class="{ 'todo-list__selected': selected }")
   ul(:style="{ width: `${todos.length * 100}` }")
     li(
       v-for="todo in todos"
@@ -33,26 +33,32 @@ export default {
 
 <style lang="scss">
 .todo-list {
-  padding: 0 32px;
-  height: 400px;
+  height: 250px;
   transition: all .5s ease;
+
+  ul {
+    overflow-x: scroll;
+    padding: 0px 0px 20px 10px;
+  }
+
+  ul,
+  ul li {
+    display: flex;
+    height: 100%;
+  }
+
+  ul li {
+    flex: 1;
+    transition: transform .5s ease;  
+  }
+
+  .todo {
+    border-radius: 8px;
+    background-color: white;
+  }
 }
 
-ul {
-  overflow-x: scroll;
-  padding-left: 20px;
-}
 
-ul,
-ul li {
-  display: flex;
-  height: 100%;
-}
-
-ul li {
-  flex: 1;
-  transition: transform .5s ease;  
-}
   
 .todo-list__selected {
   transform: scaleX(1.25);

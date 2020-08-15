@@ -107,13 +107,11 @@ export default {
 <style lang="scss">
 .todo {
   flex: 1;
-  margin: 0px 8px 10px 8px;
+  width: 90vw;
+  margin: 0px 8px;
   overflow: hidden;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   color: #666;
-
-  border-radius: 8px;
-  background-color: white;
 }
 .todo__selected {
   visibility: hidden;
@@ -129,8 +127,7 @@ export default {
 }
 .todo_body {
   padding: 20px;
-  width: 70vw;
-  // transform: translate3d(0, 189px, 0);
+  transform: translate3d(0, 0px, 0);
   will-change: transform;
 }
 .todo_icon {
@@ -152,7 +149,7 @@ export default {
   font-weight: 600;
 }
 .todo_title {
-  margin-top: 6px;
+  margin-top: 0px;
   font-size: 32px;
 }
 .todo_progress {
@@ -175,16 +172,16 @@ export default {
   .todo_progress_num {
     font-size: 12px;
   }
+}
+.todo_tasks {
+  opacity: 0;
+  transform: scale3d(1, 0, 1);
 
-  .todo_tasks {
-    opacity: 0;
-    transform: scale3d(1, 0, 1);
-  }
+}
 
-  .todo_subtitle {
-    margin-top: 32px;
-    margin-bottom: 8px;
-    color: #999;
-  }
+.todo_subtitle {
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #999;
 }
 </style>
